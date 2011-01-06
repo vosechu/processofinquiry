@@ -1,0 +1,157 @@
+@bg-color: #e3e9ff;
+
+.box-shadow (@distance: 2px) {
+  -webkit-box-shadow: @distance @distance (@distance / 2) (@distance / 2) (@bg-color - #444);
+     -moz-box-shadow: @distance @distance (@distance / 2) (@distance / 2) (@bg-color - #444);
+       -o-box-shadow: @distance @distance (@distance / 2) (@distance / 2) (@bg-color - #444);
+          box-shadow: @distance @distance (@distance / 2) (@distance / 2) (@bg-color - #444);
+}
+
+.border-radius (@radius: 5px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+/* ------- Global tweaks */
+.clearfix:after,
+.question:after,
+.response:after,
+.container:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+h1, p, li, a {
+  font-family: 'Arvo', serif;
+  line-height: 22px;
+}
+p {
+  font-size: 16px;
+}
+
+body {
+  background-color: @bg-color;
+}
+.container {
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  margin-top: 15px;
+  .box-shadow(2px);
+  .border-radius();
+  border: 2px solid;
+}
+
+/*#header {
+  #beaker-wrapper {
+    position: relative;
+    margin-top: -50px;
+    float: left;
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+  #beaker-background {
+    position: absolute;
+    top: 203px;
+    background-color: red;
+    width: 136px;
+    left: 1px;
+    height: 97px;
+  }
+  #logo {
+    position: relative;
+    z-index: 1;
+  }
+  h1 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1em;
+    top: 60px;
+    position: relative;
+    width: 100%;
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+  }
+  nav {
+    position: relative;
+    top: 65px;
+
+    ul li {
+      float: left;
+      margin-right: 47px;
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      font-size: 24px;
+    }
+    a {
+      color: #222;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+}*/
+
+
+.first.process {
+  margin-top: 0;
+  border-top: none;
+}
+.process {
+  padding: 10px 0;
+  margin-left: 130px;
+  width: 700px;
+}
+.question {
+  margin-left: -24px;
+}
+.question,
+.response {
+  img {
+    float: left;
+    margin-right: 10px;
+    padding-top: 6px;
+  }
+  div.email {
+    padding-top: 3px;
+  }
+}
+.response {
+  margin-top: 6px;
+  margin-left: 50px;
+
+  p {
+    margin-left: 60px;
+    padding-bottom: 5px;
+  }
+  div {
+    margin-left: 60px;
+  }
+}
+.response_0 {
+  color: #444;
+  border-top: 1px dotted #444;
+}
+.response_1 {
+  color: #888;
+  border-top: 1px dotted #888;
+}
+.response_2 {
+  color: #BBB;
+  border-top: 1px dotted #BBB;
+}
+.question .email,
+.response_0 .email,
+.response_1 .email,
+.response_2 .email {
+  font-size: 13px;
+  font-style: italic;
+}
+.accepted {
+  color: green;
+}
