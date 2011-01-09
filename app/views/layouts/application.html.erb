@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ProcessOfInquiry</title>
-  <%= stylesheet_link_tag :all %>
+  <title>Getting project requirements without anesthesia | Process Of Inquiry</title>
+  <%= stylesheet_link_tag 'reset' %>
+  <%= stylesheet_link_tag 'master' %>
+  <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700' %>
+  <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Arvo' %>
+  <!--[if IE]>
+  <%= stylesheet_link_tag 'ie' %>
+  <![endif]-->
+  
   <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" %>
   <%= javascript_include_tag 'rails' %>
   <%= csrf_meta_tag %>
 </head>
 <body>
-
-<%= yield %>
-
+  <header>
+    <div id="beaker-wrapper">
+      <div id="beaker-background"></div>
+      <img src="beaker.png" id="logo" />
+    </div>
+    <h1>Process of Inquiry</h1>
+    <nav>
+      <ul>
+        <li><a href="">About</a></li>
+        <li><a href="">Propose</a></li>
+        <li><a href="">Archives</a></li>
+        <li><a href="">Summary</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="content">
+    <%= yield %>
+  </section>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="">Text</a></li>
+        <li><a href="">Text</a></li>
+        <li><a href="">Text</a></li>
+        <li><a href="">Text</a></li>
+        <li><a href="">Text</a></li>
+      </ul>
+    </nav>
+  </footer>
 </body>
 </html>

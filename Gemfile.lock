@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/sferik/rails_admin.git
+  revision: ee22837f4e603941650c20c70f730629ab8a2270
+  specs:
+    rails_admin (0.0.1)
+      builder (~> 2.1.0)
+      rails (~> 3.0.3)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -29,7 +37,11 @@ GEM
       activesupport (= 3.0.3)
     activesupport (3.0.3)
     arel (2.0.6)
+    bcrypt-ruby (2.1.4)
     builder (2.1.2)
+    devise (1.1.5)
+      bcrypt-ruby (~> 2.1.2)
+      warden (~> 1.0.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     haml (3.0.25)
@@ -72,13 +84,20 @@ GEM
     treetop (1.4.9)
       polyglot (>= 0.3.1)
     tzinfo (0.3.23)
+    unicorn (0.97.1)
+      rack
+    warden (1.0.3)
+      rack (>= 1.0.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  devise
   haml
   jquery-rails (>= 0.2.6)
   less
   mysql2
   rails (= 3.0.3)
+  rails_admin!
+  unicorn

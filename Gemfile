@@ -8,7 +8,7 @@ gem 'rails', '3.0.3'
 gem 'mysql2'
 
 # Use unicorn as the web server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -33,3 +33,6 @@ gem 'mysql2'
 gem 'jquery-rails', '>= 0.2.6'
 gem 'less'
 gem 'haml'
+
+gem 'devise' # Devise must be required before RailsAdmin
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
