@@ -38,14 +38,17 @@
 }
 h1, p, li, a {
   font-family: 'Arvo', serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 p { font-size: 16px; }
-body { background-color: #e3e9ff; }
-.container {
+header, #content, footer {
   width: 960px;
   margin-right: auto;
   margin-left: auto;
+}
+body { background-color: #e3e9ff; }
+.container {
+  width: 720px;
   background-color: white;
   margin-top: 15px;
   -webkit-box-shadow: 2px 2px 1px 1px #9fa5bb;
@@ -56,47 +59,94 @@ body { background-color: #e3e9ff; }
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 2px solid;
+  padding: 10px 120px;
+}
+header {
+  position: relative;
+  height: 105px;
+}
+header nav ul {
+  position: absolute;
+  right: 28px;
+  bottom: 60px;
+}
+header nav ul li {
+  float: left;
+  margin-right: 15px;
+}
+header nav ul li a {
+  padding: 5px 15px;
+  text-decoration: none;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+header nav ul li a:hover { background-color: rgba(0, 0, 0, 0.4); }
+header h1 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1em;
+  position: absolute;
+  right: 70px;
+  bottom: -13px;
+}
+header #beaker-wrapper {
+  position: absolute;
+  right: -65px;
+  bottom: -130px;
+}
+header #beaker-background {
+  position: absolute;
+  top: 203px;
+  background-color: red;
+  width: 136px;
+  left: 1px;
+  height: 97px;
+}
+header #logo {
+  position: relative;
+  z-index: 1;
 }
 .first.process {
   margin-top: 0;
   border-top: none;
 }
-.process {
-  padding: 10px 0;
-  margin-left: 130px;
-  width: 700px;
+.question { margin-left: -20px; }
+.response {
+  margin-left: 50px;
+  margin-top: 8px;
+  padding-top: 8px;
 }
-.question { margin-left: -24px; }
 .question img {
   float: left;
   margin-right: 10px;
-  padding-top: 6px;
 }
-.question div.email { padding-top: 3px; }
 .response img {
   float: left;
   margin-right: 10px;
-  padding-top: 6px;
 }
-.response div.email { padding-top: 3px; }
-.response {
-  margin-top: 6px;
-  margin-left: 50px;
-}
-.response p {
-  margin-left: 60px;
-  padding-bottom: 5px;
-}
-.response div { margin-left: 60px; }
 .response_0 {
+  color: #000000;
+  border-top: 1px dotted #000000;
+}
+.response_1 {
   color: #444444;
   border-top: 1px dotted #444444;
 }
-.response_1 {
+.response_2 {
   color: #888888;
   border-top: 1px dotted #888888;
 }
-.response_2 {
+.response_3 {
   color: #bbbbbb;
   border-top: 1px dotted #bbbbbb;
 }
@@ -113,6 +163,10 @@ body { background-color: #e3e9ff; }
   font-style: italic;
 }
 .response_2 .email {
+  font-size: 13px;
+  font-style: italic;
+}
+.response_3 .email {
   font-size: 13px;
   font-style: italic;
 }

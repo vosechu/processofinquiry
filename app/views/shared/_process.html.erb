@@ -1,0 +1,5 @@
+<div class="<%= type.to_s %> <%= 'response_' + level.to_s if type == :response %>">
+  <img src="http://gravatar.com/avatar/<%= Digest::MD5.hexdigest(email) %>?size=60&d=retro">
+  <p><%= body || "No response yet." %></p>
+  <div class="email"><%= email %></div>
+</div>
