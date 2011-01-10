@@ -49,8 +49,11 @@ footer {
 }
 
 body {
-  background-color: @bg-color;
+  background: @bg-color url(/images/water-bg.jpg) fixed no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
 }
+
 .container {
   width: 720px;
   background-color: white;
@@ -63,12 +66,12 @@ body {
 
 header {
   position: relative;
-  height: 105px;
+  height: 125px;
   
   nav ul {
     position: absolute;
     right: 28px;
-    bottom: 60px;
+    bottom: 55px;
   }
   nav ul li {
     float: left;
@@ -94,12 +97,12 @@ header {
     line-height: 1em;
     position: absolute;
     right: 70px;
-    bottom: -13px;
+    bottom: -20px;
   }
   #beaker-wrapper {
     position: absolute;
     right: -65px;
-    bottom: -130px;
+    bottom: -125px;
   }
   #beaker-background {
     position: absolute;
@@ -108,10 +111,44 @@ header {
     width: 136px;
     left: 1px;
     height: 97px;
+    overflow: hidden;
+  }
+  #beaker-background img {
+    position: relative;
+    left: -50px;
+    top: -50px;
+    opacity: 0.8;
   }
   #logo {
     position: relative;
     z-index: 1;
+  }
+}
+
+footer {
+  position: relative;
+  
+  nav {
+    padding: 20px 5px;
+  }
+  nav ul {
+    position: absolute;
+  }
+  nav ul li {
+    float: left;
+    margin-right: 15px;
+  }
+  nav ul li a {
+    padding: 5px 15px;
+    text-decoration: none;
+    .border-radius(14px);
+    background-color: rgba(0,0,0,0.2);
+    color: #FFF;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    .transition-all();
+  }
+  nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
   }
 }
 

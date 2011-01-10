@@ -46,7 +46,11 @@ header, #content, footer {
   margin-right: auto;
   margin-left: auto;
 }
-body { background-color: #e3e9ff; }
+body {
+  background: #e3e9ff url(/images/water-bg.jpg) fixed no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+}
 .container {
   width: 720px;
   background-color: white;
@@ -63,12 +67,12 @@ body { background-color: #e3e9ff; }
 }
 header {
   position: relative;
-  height: 105px;
+  height: 125px;
 }
 header nav ul {
   position: absolute;
   right: 28px;
-  bottom: 60px;
+  bottom: 55px;
 }
 header nav ul li {
   float: left;
@@ -97,12 +101,12 @@ header h1 {
   line-height: 1em;
   position: absolute;
   right: 70px;
-  bottom: -13px;
+  bottom: -20px;
 }
 header #beaker-wrapper {
   position: absolute;
   right: -65px;
-  bottom: -130px;
+  bottom: -125px;
 }
 header #beaker-background {
   position: absolute;
@@ -111,11 +115,40 @@ header #beaker-background {
   width: 136px;
   left: 1px;
   height: 97px;
+  overflow: hidden;
+}
+header #beaker-background img {
+  position: relative;
+  left: -50px;
+  top: -50px;
+  opacity: 0.8;
 }
 header #logo {
   position: relative;
   z-index: 1;
 }
+footer { position: relative; }
+footer nav { padding: 20px 5px; }
+footer nav ul { position: absolute; }
+footer nav ul li {
+  float: left;
+  margin-right: 15px;
+}
+footer nav ul li a {
+  padding: 5px 15px;
+  text-decoration: none;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+footer nav ul li a:hover { background-color: rgba(0, 0, 0, 0.4); }
 .first.process {
   margin-top: 0;
   border-top: none;
