@@ -1,0 +1,6 @@
+@media only all and (max-width: 1208px) and (max-height: 1346px) {
+	body {
+		-moz-background-size: 1208px 1346px;
+		background-size: 1208 1346px;
+	}
+}

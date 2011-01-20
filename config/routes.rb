@@ -1,4 +1,6 @@
 ProcessOfInquiry::Application.routes.draw do
+  resources :inquiries
+
   devise_for :users
 
   get "page/about"
