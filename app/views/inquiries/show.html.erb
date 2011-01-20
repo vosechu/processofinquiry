@@ -1,0 +1,5 @@
+<div class="question">
+  <img src="http://gravatar.com/avatar/<%= Digest::MD5.hexdigest(@inquiry.email) %>?size=60&d=retro">
+  <p><%= @inquiry.question %></p>
+  <div class="email"><%= @inquiry.email %></div>
+</div>
