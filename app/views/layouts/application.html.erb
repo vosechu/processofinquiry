@@ -12,7 +12,7 @@
   <![endif]-->
   
   <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" %>
-  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag :all %>
   <%= csrf_meta_tag %>
 </head>
 <body>
@@ -24,10 +24,10 @@
     <h1>Process of Inquiry</h1>
     <nav>
       <ul>
-        <li><a href="">About</a></li>
-        <li><a href="">Propose</a></li>
-        <li><a href="">Archives</a></li>
-        <li><a href="">Summary</a></li>
+        <li><a id="menu-about" href="#!about">About</a></li>
+        <li><a id="menu-propose" href="#!propose">Propose</a></li>
+        <li><a id="menu-archives" href="#!archives">Archives</a></li>
+        <li><a id="menu-summary" href="#!summary">Summary</a></li>
       </ul>
     </nav>
   </header>

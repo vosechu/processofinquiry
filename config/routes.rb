@@ -1,4 +1,6 @@
 ProcessOfInquiry::Application.routes.draw do
+  resources :responses
+
   resources :inquiries
 
   devise_for :users
